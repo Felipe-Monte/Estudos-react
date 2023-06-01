@@ -7,7 +7,9 @@ export function Details() {
       <h1>Carlos Felipe</h1>
       <p>Meu nome aqui</p>
 
-      <Button />
+      <Button tittle='Iniciar' loading/>
+      <Button tittle='Ativar'/>
+      <Button tittle='Voltar'/>
     </Container>
   )
 }

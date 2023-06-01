@@ -1,9 +1,14 @@
 import { Container } from "./style";
 
-export function Button() {
-  return(
-   <Container type="button">
-     Meu botão
-   </Container>
+export function Button({ tittle, loading, ...rest }) {
+  return (
+    <Container
+      type="button"
+      disabled={loading}
+      {...rest}
+    >
+
+      {loading ? 'Carregando...' : tittle}
+    </Container>
   )
 }
