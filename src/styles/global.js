@@ -5,11 +5,15 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  body , button , a , textarea {
+    font-family: 'Roboto Slab', serif;
   }
 
   body {
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
+    color: ${({ theme }) => theme.COLORS.WHITE};
   }
 
 `
